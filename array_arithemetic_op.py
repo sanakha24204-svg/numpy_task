@@ -47,7 +47,7 @@ import numpy as np
 # #                             [2.44948974 2.         1.73205081 1.        ]]
 
 
-a = np.array([[3,2,4,1],[6,4,3,1]])
+# a = np.array([[3,2,4,1],[6,4,3,1]])
 
 # a * 2 # each element in array has been multyiply with 2 and return result in a array
 # a ** 2 # vector calculation
@@ -62,13 +62,12 @@ a = np.array([[3,2,4,1],[6,4,3,1]])
 
 # # sorting
 #   -------
-rev = np.sort(a)    # ascending order rowise
-print(rev)      # [[1 2 3 4]
- #                 [1 3 4 6]]
-
-print(np.sort(a)[:,::-1]) # decending order rowise
-#                   [[4 3 2 1]
-#                    [6 4 3 1]]       
+# rev = np.sort(a)    # ascending order rowise
+# print(rev)      # [[1 2 3 4]
+#  #                 [1 3 4 6]]
+# print(np.sort(a)[:,::-1]) # decending order rowise
+# #                   [[4 3 2 1]
+# #                    [6 4 3 1]]       
 
 
 
@@ -137,3 +136,53 @@ print(np.sort(a)[:,::-1]) # decending order rowise
 
 # print(np.where(arr_2 > 5,"pass","fail"))        # ['fail' 'fail' 'fail' 'pass' 'fail' 'pass']
 
+# arr = np.array([[30,10,90],
+#                 [20,40,70],
+#                 [25,45,80]])
+
+# print(arr[::-1,:])
+# """
+# [[25 45 80]
+#  [20 40 70]
+#  [30 10 90]]
+
+#  it reverse all the rows by selecting all the column
+# """
+# print(arr[:,::-1])
+# """
+# [[90 10 30]
+#  [70 40 20]
+#  [80 45 25]]
+ 
+#  it selects all the rows and reverse the column
+# """
+# print(arr[0:2,::-1])
+# """
+# [[90 10 30]
+#  [70 40 20]]
+
+# it selects first two rows and reverse the column
+# """
+# print(arr[::-1,::-1])
+# """
+# [[80 45 25]
+#  [70 40 20]
+#  [90 10 30]]
+
+#  it reverse all the rows and column
+# """
+
+# print(np.sort(arr))       # default is row so it will sort ascending order rowise
+# print(np.sort(arr)[:,::-1])     # it will sort in reverse by column wise
+# print(np.sort(arr)[::-1,::-1])   # it will sort columnwise and rowise
+
+# print(np.sort(arr,axis=0)) # it will sort the column in ascending order
+
+# arr_3 = np.array([4.65,5.35,6.98,7.5])
+
+# print(np.floor(arr_3))  # [4. 5. 6. 7.]
+# print(np.round(arr_3))  # [5. 5. 7. 8.]
+# print(np.ceil(arr_3))   # [5. 6. 7. 8.]
+
+# print(arr_3.size)       # 4
+ 

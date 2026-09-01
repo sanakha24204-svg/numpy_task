@@ -33,7 +33,7 @@ package - which has more than one module
 
 <> numpy(numerical python)
    -----------------------
-
+    pip install numpy
     Used to numerical and mathematical operations
     In numpy array is used as collection becuz it is faster than python list
     It is a full of methods
@@ -73,7 +73,6 @@ to find dimention (elements.ndim)
   np.array([])
 
 
-
 if it is an attribute it do not give brackets
 
 print(elements.ndim) - to know the dimention of the array
@@ -91,7 +90,16 @@ print(np.multiply(a,b))
 print(np.divide(a,b))
 print(np.square(a))
 print(np.sqrt(a))
-# return sum of all elements in the array
+print(arr.size)    - it returns the how many elements present
+
+methods that used when the datatype is float
+----------------------------------------
+
+np.floor(arr)   - it returns whichever number is before the decimal. it removes all the decimal
+np.round(arr)   - it will round the float number
+np.ceil(arr)    - whichever float number is given it will return the next number of it
+
+return sum of all elements in the array
   ---------------------------------
 print(np.sum(a,axis=None)) - (24)
 print(np.sum(a,axis=1)) -  sum of elements in rowise >>> [10 14]
@@ -105,7 +113,7 @@ print(r)
 r = np.sort(a,axis=1)[:,::-1]   - desending order
 np.sort() - returns the array in ascending order
 np.sort(a,axis=1)[:,::-1]  - in desending order
-we are using slicing technique so need to give row index and column index
+we are using slicing technique so we have to give row index and column index
 arr_2.argsort() - it returns the index position of ascending order
 arr_2.argmax() - return the index value of the maximum value of an array
 arr_2.argmin() - return the index value of the minimum value of an array 
@@ -114,7 +122,9 @@ slicing
 -------
 
 arr[row_start:row_stop:step,col_start:col_stop:step]
-
+arr[:,0:1]    - (:) means selecting all the rows when its given in left side
+arr[0:2,:]    - (:) means selecting all the column when its given in right side
+(arr[0:2,::-1]) -
 
 Types of matrices
 -----------------
